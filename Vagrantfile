@@ -8,8 +8,8 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.name = "spacestation"
     vb.gui = false
-    vb.cpus = 8
-    vb.memory = "8192"
+    vb.cpus = 2
+    vb.memory = "2048"
     vb.customize [
       "modifyvm", :id,
       "--vram", "256",
